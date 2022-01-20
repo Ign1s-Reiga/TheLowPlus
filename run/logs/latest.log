@@ -1,41 +1,40 @@
-[11:42:19] [Client thread/INFO]: Setting user: Player331
-[11:42:21] [Client thread/INFO]: LWJGL Version: 2.9.4
-[11:42:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TheLowPlus
-[11:42:24] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[11:42:25] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[11:42:25] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[11:42:25] [Thread-9/INFO]: OpenAL initialized.
-[11:42:25] [Sound Library Loader/INFO]: Sound engine started
-[11:42:30] [Client thread/INFO]: Created: 16x16 textures-atlas
-[11:42:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TheLowPlus
-[11:42:30] [Client thread/INFO]: SoundSystem shutting down...
-[11:42:31] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[11:42:31] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[11:42:31] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[11:42:31] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[11:42:31] [Thread-11/INFO]: OpenAL initialized.
-[11:42:31] [Sound Library Loader/INFO]: Sound engine started
-[11:42:36] [Client thread/INFO]: Created: 512x512 textures-atlas
-[11:42:40] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
-[11:42:40] [Server thread/INFO]: Generating keypair
-[11:42:40] [Server thread/INFO]: Preparing start region for level 0
-[11:42:41] [Server thread/INFO]: Changing view distance to 12, from 10
-[11:42:42] [Server thread/INFO]: Player331[local:E:f6435b08] logged in with entity id 67 at (-785.0249668998808, 4.0, 1142.210593170722)
-[11:42:42] [Server thread/INFO]: Player331 がゲームに参加しました
-[11:43:18] [Server thread/INFO]: [Player331: titleコマンドは正常に実行されました]
-[11:43:18] [Client thread/INFO]: [CHAT] titleコマンドは正常に実行されました
-[11:43:25] [Server thread/INFO]: Player331 は [所持品の確認] の実績を取得した
-[11:43:25] [Client thread/INFO]: [CHAT] Player331 は [所持品の確認] の実績を取得した
-[11:49:57] [Server thread/INFO]: Saving and pausing game...
-[11:49:57] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
-[11:49:57] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
-[11:49:57] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
-[11:49:58] [Server thread/INFO]: Stopping server
-[11:49:58] [Server thread/INFO]: Saving players
-[11:49:58] [Server thread/INFO]: Saving worlds
-[11:49:58] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
-[11:49:58] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
-[11:49:58] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
-[11:49:59] [Client thread/INFO]: Stopping!
-[11:49:59] [Client thread/INFO]: SoundSystem shutting down...
-[11:49:59] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[02:26:49] [Client thread/INFO]: Setting user: Player981
+[02:26:51] [Client thread/INFO]: LWJGL Version: 2.9.4
+[02:26:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TheLowPlus
+[02:26:56] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[02:26:56] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[02:26:56] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[02:26:56] [Thread-9/INFO]: OpenAL initialized.
+[02:26:56] [Sound Library Loader/INFO]: Sound engine started
+[02:27:01] [Client thread/INFO]: Created: 16x16 textures-atlas
+[02:27:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:TheLowPlus
+[02:27:02] [Client thread/INFO]: SoundSystem shutting down...
+[02:27:02] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[02:27:02] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[02:27:02] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[02:27:02] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[02:27:02] [Thread-11/INFO]: OpenAL initialized.
+[02:27:03] [Sound Library Loader/INFO]: Sound engine started
+[02:27:07] [Client thread/INFO]: Created: 512x512 textures-atlas
+[02:27:16] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[02:27:16] [Server thread/INFO]: Generating keypair
+[02:27:17] [Server thread/INFO]: Preparing start region for level 0
+[02:27:18] [Server thread/INFO]: Preparing spawn area: 72%
+[02:27:18] [Server thread/INFO]: Changing view distance to 12, from 10
+[02:27:19] [Server thread/INFO]: Player981[local:E:5d4de625] logged in with entity id 83 at (-781.3252523124717, 4.0, 1138.9364882743973)
+[02:27:19] [Server thread/INFO]: Player981 がゲームに参加しました
+[02:27:25] [Server thread/INFO]: Player981 は [所持品の確認] の実績を取得した
+[02:27:25] [Client thread/INFO]: [CHAT] Player981 は [所持品の確認] の実績を取得した
+[02:27:45] [Server thread/INFO]: Saving and pausing game...
+[02:27:45] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
+[02:27:45] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
+[02:27:45] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
+[02:27:46] [Server thread/INFO]: Stopping server
+[02:27:46] [Server thread/INFO]: Saving players
+[02:27:46] [Server thread/INFO]: Saving worlds
+[02:27:46] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Overworld
+[02:27:46] [Server thread/INFO]: Saving chunks for level '新規ワールド'/Nether
+[02:27:46] [Server thread/INFO]: Saving chunks for level '新規ワールド'/The End
+[02:27:47] [Client thread/INFO]: Stopping!
+[02:27:47] [Client thread/INFO]: SoundSystem shutting down...
+[02:27:47] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

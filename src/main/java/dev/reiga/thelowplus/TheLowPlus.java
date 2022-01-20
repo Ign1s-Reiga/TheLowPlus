@@ -19,16 +19,20 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 @Mod(modid = "thelowplus", name = "TheLowPlus", version = "1.0")
 public class TheLowPlus {
     @Mod.Instance("thelowplus")
     public static TheLowPlus instance;
 
     private final Logger logger = LogManager.getLogger();
-    private final int sumCount = 78;
-    private final int timeOfCounts = 11;
+    private final int maxTitleView = 11;
+    public int titleViewCount = 0;
+    public List<Integer> count = new ArrayList<>();
     public boolean isCount = false;
-    public int count = 0;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -52,8 +56,9 @@ public class TheLowPlus {
     public void onRenderAllOverlay(RenderGameOverlayEvent event) {
         FontRenderer fontRenderer = Minecraft.getMinecraft().fontRendererObj;
         int height = fontRenderer.FONT_HEIGHT;
-        fontRenderer.drawString("titleCount: " + TheLowPlus.instance.count, 2, height + 1, 14737632);
-        fontRenderer.drawString("isCount: " + TheLowPlus.instance.isCount, 2, height + 8, 14737632);
+        fontRenderer.drawString("titleCount: " + count.stream().mapToInt(v -> v).sum(), 2, height + 1, 14737632);
+        fontRenderer.drawString("isCount: " + isCount, 2, height + 8, 14737632);
+        fontRenderer.drawString("isCount: " + getNotReleasedNum(), 2, height + 15, 14737632);
     }
 
     @SideOnly(Side.CLIENT)
@@ -61,11 +66,18 @@ public class TheLowPlus {
     public void onRenderTitle(RenderGameOverlayEvent event) throws IllegalAccessException {
         if (event.type == RenderGameOverlayEvent.ElementType.TEXT) {
             String title = (String) ReflectionHelper.findField(GuiIngame.class, "displayedTitle", "field_175201_x").get(Minecraft.getMinecraft().ingameGUI);
-            for (NumeralsList v : NumeralsList.values())
-                if (title.contains(v.getRomeNumerals())) {
-                    count += v.getArabicNumerals();
-                    break;
-                }
+            Arrays.stream(NumeralsList.values())
+                    .forEach(v -> {
+                        if (title.contains(v.getRomeNumerals()) && !count.contains(v.getArabicNumerals())) {
+                            count.add(v.getArabicNumerals());
+                            titleViewCount++;
+                        }
+                    });
         }
+    }
+
+    private int getNotReleasedNum() {
+        final int sumCount = 78;
+        return sumCount - count.stream().mapToInt(v -> v).sum();
     }
 }

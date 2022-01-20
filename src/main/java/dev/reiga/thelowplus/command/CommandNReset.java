@@ -7,6 +7,7 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.ChatComponentText;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,7 +29,8 @@ public class CommandNReset implements ICommand {
 
     @Override
     public void processCommand(ICommandSender sender, String[] args) throws CommandException {
-        TheLowPlus.instance.count = 0;
+        TheLowPlus.instance.count = new ArrayList<>();
+        TheLowPlus.instance.titleViewCount = 0;
         sender.addChatMessage(new ChatComponentText("Reset TitleCount."));
     }
 
